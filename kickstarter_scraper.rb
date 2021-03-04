@@ -3,8 +3,15 @@ require 'open-uri'
 
 require_relative './course.rb'
 
+html = File.read('fixtures/kickstarter.html')
+
+kickstarter = Nokogiri::HTML(html)
+
 def create_project_hash
 end
+
+
+# data-project {"id":473403084}
 
 
 
